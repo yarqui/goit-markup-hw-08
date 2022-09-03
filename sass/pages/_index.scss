@@ -1,3 +1,5 @@
+// HERO
+
 .hero {
   margin-right: auto;
   margin-left: auto;
@@ -18,26 +20,33 @@
 
 .hero__title {
   @include fontSet(900, 44px, 1.36, 00.06em);
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // letter-spacing: 0.06em;
+
   text-transform: uppercase;
 
   color: var(--main-white-color);
 }
 
+// BENEFITS
+
 .benefits__list {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
+// .benefits__list {
+//   display: flex;
+// }
 
 .benefits__item {
-  width: 270px;
-
-  &:not(:first-child) {
-    margin-left: 30px;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
 }
+
+// .benefits__item {
+//   width: 270px;
+// }
 
 .benefits__item-wrap {
   @include centeredFlex;
@@ -54,9 +63,18 @@
 
   @include fontSet(700, $lh: 1.14);
   text-transform: uppercase;
+  text-align: center;
 
   color: var(--black-font-color);
 }
+// .benefits__item-title {
+//   margin-top: 30px;
+
+//   @include fontSet(700, $lh: 1.14);
+//   text-transform: uppercase;
+
+//   color: var(--black-font-color);
+// }
 
 .benefits__item-text {
   margin-top: 10px;
@@ -65,6 +83,8 @@
 
   color: var(--grey-font-color);
 }
+
+// BUSINESS
 
 .business {
   padding-top: 0;
@@ -98,6 +118,8 @@
   color: var(--main-white-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
+
+// TEAM
 
 .team {
   background: var(--light-grey-color);
@@ -140,6 +162,8 @@
   margin-top: 10px;
   color: var(--grey-font-color);
 }
+
+// CLIENTS
 
 .clients__list {
   display: flex;
