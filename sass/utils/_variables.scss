@@ -1,0 +1,15 @@
+body {
+  --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --main-white-color: #ffffff;
+  --black-font-color: #212121;
+  --accent-color: #2196f3;
+  --light-grey-color: #f5f4fa;
+  --sec-grey-color: #afb1b8;
+  --grey-font-color: #757575;
+  --dark-grey-color: #2f303a;
+
+  color: var(--black-font-color);
+}
+
+

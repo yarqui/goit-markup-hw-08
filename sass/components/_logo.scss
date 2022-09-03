@@ -1,0 +1,16 @@
+.logo {
+  height: auto;
+  font-family: "Raleway", sans-serif;
+
+  @include fontSet(700, 26px, 1.19);
+
+  color: var(--accent-color);
+}
+
+.logo__header {
+  color: var(--black-font-color);
+}
+
+.logo__footer {
+  color: var(--main-white-color);
+}

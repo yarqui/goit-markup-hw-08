@@ -1,0 +1,35 @@
+.soc-list {
+  @include centeredFlex($ai: null);
+
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.soc-list__link {
+  @include centeredFlex;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--sec-grey-color);
+  background-color: var(--main-white-color);
+  transition: background-color var(--main-transition),
+    fill var(--main-transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--main-white-color);
+  }
+}
+
+.soc-list__link--dark {
+  fill: var(--main-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--main-transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}

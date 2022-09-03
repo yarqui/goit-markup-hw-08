@@ -1,0 +1,127 @@
+.btn {
+  min-width: 200px;
+
+  @include fontSet(700, 16px, 1.88, 0.06em);
+
+  color: var(--main-white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  transition: color var(--main-transition), background var(--main-transition);
+}
+
+.btn-hero {
+  margin-top: 30px;
+  padding: 10px;
+  min-width: 216px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+
+    color: var(--accent-color);
+    background-color: var(--main-white-color);
+  }
+}
+
+.btn-subscribe {
+  @include centeredFlex;
+
+  margin-left: 12px;
+  height: 50px;
+  gap: 10px;
+
+  transition: fill var(--main-transition), color var(--main-transition),
+    background-color var(--main-transition);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+
+    background-color: var(--main-white-color);
+    color: var(--accent-color);
+  }
+}
+
+.btn-subscribe__text {
+  padding-left: 5px;
+}
+
+.btn-subscribe__icon {
+  fill: var(--main-white-color);
+
+  transition: fill var(--main-transition);
+
+  .btn-subscribe:hover &,
+  .btn-subscribe:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.btn-submit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+
+    background-color: #188ce8;
+  }
+}
+
+.filter-list__btn {
+  cursor: pointer;
+  padding: 6px 22px;
+
+  @include fontSet(500, 16px, 1.62);
+
+  text-align: center;
+
+  border-radius: 4px;
+  border: none;
+  background: var(--light-grey-color);
+  color: var(--black-font-color);
+
+  transition: background var(--main-transition), color var(--main-transition),
+    box-shadow var(--main-transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-white-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  @include centeredFlex;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.close-icon {
+  transition: fill var(--main-transition);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent-color);
+  }
+}

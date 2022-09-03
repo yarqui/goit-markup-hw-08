@@ -1,0 +1,87 @@
+.header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  border-bottom: solid 1px #ececec;
+}
+
+.header__wrap {
+  @include centeredFlex($jc: null);
+}
+
+.header__nav {
+  display: flex;
+  width: 281px;
+  margin-left: 93px;
+  column-gap: 50px;
+
+  @include fontSet(500, $lh: 1.14, $ls: 0.02em);
+}
+
+.header__link {
+  position: relative;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--black-font-color);
+
+  transition: color var(--main-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__link--current {
+  color: var(--accent-color);
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    display: inline-block;
+    bottom: -1px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.header-contacts {
+  @include centeredFlex($jc: null);
+
+  padding-left: 318px;
+}
+
+.header-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-contacts__link {
+  @include centeredFlex($jc: null);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include fontSet(500, $lh: 1.14, $ls: 0.02em);
+
+  color: var(--grey-font-color);
+  fill: var(--grey-font-color);
+
+  transition: color var(--main-transition), fill var(--main-transition);
+
+  &:last-child {
+    margin-left: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
