@@ -1,21 +1,42 @@
 .filter-list {
-  @include centeredFlex($ai: null);
+  @include centeredFlex($jc: start, $ai: null);
+  flex-wrap: wrap;
   column-gap: 8px;
+  row-gap: 15px;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    width: 326px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
 }
 
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+
+  margin-top: 30px;
   gap: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 50px;
+  }
 }
 
 .portfolio__item {
-  width: 370px;
-  left: 1015px;
-  top: 262px;
+  width: 100%;
 
   background: var(--main-white-color);
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio__image-wrap {
@@ -25,6 +46,7 @@
 }
 
 .portfolio__text-wrap {
+  flex-grow: 1;
   padding: 20px 24px;
 
   border-left: 1px solid #eeeeee;
@@ -46,7 +68,9 @@
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition: box-shadow var(--main-transition);
 

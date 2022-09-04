@@ -29,7 +29,6 @@
 .btn-subscribe {
   @include centeredFlex;
 
-  margin-left: 12px;
   height: 50px;
   gap: 10px;
 
@@ -42,6 +41,14 @@
 
     background-color: var(--main-white-color);
     color: var(--accent-color);
+  }
+
+  @media screen and (max-width: calc($desktop - 0.5px)) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
   }
 }
 

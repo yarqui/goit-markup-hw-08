@@ -31,6 +31,7 @@ address {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -42,17 +43,3 @@ img {
 .link {
   text-decoration: none;
 }
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-}
-
-// .container {
-//   width: 1200px;
-//   padding-right: 15px;
-//   padding-left: 15px;
-//   margin: 0 auto;
-// }

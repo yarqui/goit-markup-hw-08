@@ -1,8 +1,11 @@
 .logo {
   height: auto;
   font-family: "Raleway", sans-serif;
+  @include fontSet(700, 24px, 1.17);
 
-  @include fontSet(700, 26px, 1.19);
+  @media screen and (min-width: $tablet) {
+    @include fontSet(700, 26px, 1.19);
+  }
 
   color: var(--accent-color);
 }
