@@ -127,11 +127,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.17;
     letter-spacing: 0.03em;
   }
 }
@@ -594,7 +594,6 @@ body {
 @media screen and (max-width: 767.5px) {
   .footer__wrap {
     flex-direction: column;
-    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -602,13 +601,30 @@ body {
     flex-wrap: wrap;
     -moz-column-gap: 165px;
          column-gap: 165px;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrap {
+    justify-content: start;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
 }
 
 .footer__address-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+@media screen and (max-width: 1199.5px) {
+  .footer__address-wrap {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address-wrap {
+    width: 231px;
+  }
 }
 
 .footer__address {
@@ -668,13 +684,20 @@ body {
 }
 
 .footer__social-wrap {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .footer__social-wrap {
+    display: flex;
     margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__social-wrap {
+    margin-left: 70px;
+    text-align: start;
   }
 }
 
@@ -691,22 +714,29 @@ body {
   color: var(--main-white-color);
 }
 
-.footer__subscribe-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 @media screen and (max-width: 1199.5px) {
   .footer__subscribe-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-wrap {
+    margin-left: auto;
   }
 }
 
 .footer__subscribe {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 20px;
+}
+@media screen and (max-width: 1199.5px) {
+  .footer__subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer__subscribe-input {

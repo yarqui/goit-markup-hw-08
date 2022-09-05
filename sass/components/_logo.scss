@@ -3,8 +3,8 @@
   font-family: "Raleway", sans-serif;
   @include fontSet(700, 24px, 1.17);
 
-  @media screen and (min-width: $tablet) {
-    @include fontSet(700, 26px, 1.19);
+  @media screen and (min-width: $desktop) {
+    @include fontSet($fw: 700, $fsz: 26px);
   }
 
   color: var(--accent-color);
