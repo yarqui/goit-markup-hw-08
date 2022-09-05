@@ -1,29 +1,45 @@
 // HERO
 
 .hero {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 200px 0;
-  max-width: 1600px;
   background-color: var(--dark-grey-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero.jpg");
+
+  // margin-right: auto;
+  // margin-left: auto;
+  // padding: 200px 0;
+  // max-width: 1600px;
+  // background-color: var(--dark-grey-color);
+  // background-image: linear-gradient(
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ),
+  //   url("../images/hero.jpg");
 }
 
 .hero__wrap {
   max-width: 696px;
+  margin: 0 auto;
+  // padding-right: 15px;
+  // padding-left: 15px;
+
   text-align: center;
+
+  @media screen and (max-width: calc($desktop - 0.5px)) {
+    max-width: 360px;
+  }
 }
 
 .hero__title {
-  @include fontSet(900, 44px, 1.36, 00.06em);
+  @include fontSet(900, 26px, 1.61, 00.06em);
 
   text-transform: uppercase;
 
   color: var(--main-white-color);
+  // @include fontSet(900, 44px, 1.36, 00.06em);
 }
 
 // BENEFITS

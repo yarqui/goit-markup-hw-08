@@ -15,7 +15,7 @@
 .btn-hero {
   margin-top: 30px;
   padding: 10px;
-  min-width: 216px;
+  min-width: 200px;
 
   &:hover,
   &:focus {
@@ -23,6 +23,10 @@
 
     color: var(--accent-color);
     background-color: var(--main-white-color);
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 216px;
   }
 }
 

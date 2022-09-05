@@ -1,6 +1,6 @@
 .footer {
   background: var(--dark-grey-color);
-
+  
   @media screen and (min-width: $mobile) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -11,11 +11,16 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+
+  width: 480px;
+
   @media screen and (max-width: calc($tablet  - 0.5px)) {
     flex-direction: column;
   }
-  
+
   @media screen and (min-width: $tablet) {
     flex-wrap: wrap;
     column-gap: 165px;
@@ -114,7 +119,6 @@
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     text-align: start;
-    // align-items: ;
   }
 }
 
@@ -163,11 +167,11 @@
   border-radius: 4px;
 
   @media screen and (max-width: 320px) {
-    max-width: 350px;
+    max-width: 202px;
   }
 
   @media screen and (min-width: $mobile) {
-    width: 450px;
+    width: 100%;
   }
 
   @media screen and (min-width: $desktop) {
