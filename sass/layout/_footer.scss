@@ -14,8 +14,7 @@
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-
-  // width: 480px;
+  text-align: center;
 
   @media screen and (max-width: calc($tablet  - 0.5px)) {
     flex-direction: column;
@@ -30,7 +29,7 @@
   @media screen and (min-width: $desktop) {
     justify-content: start;
     column-gap: 0;
-    // align-items: baseline;
+    text-align: start;
   }
 }
 

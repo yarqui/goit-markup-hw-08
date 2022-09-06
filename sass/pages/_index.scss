@@ -50,6 +50,7 @@
 .benefits__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   gap: 30px;
 
@@ -89,7 +90,7 @@
 
   color: var(--black-font-color);
 
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: calc($tablet - 0.5px)) {
     text-align: center;
   }
 }
