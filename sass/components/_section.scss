@@ -9,8 +9,15 @@
 }
 
 .section-title {
-  @include fontSet(null, 36px, 1.16);
+  @include fontSet(null, 28px, 1.18);
   text-align: center;
 
   color: var(--black-font-color);
+
+  @media screen and (min-width: $desktop) {
+    @include fontSet(null, 36px, 1.16);
+    text-align: center;
+
+    color: var(--black-font-color);
+  }
 }
