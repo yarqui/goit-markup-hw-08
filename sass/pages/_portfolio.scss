@@ -17,8 +17,12 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: 30px;
+  margin-top: 40px;
   gap: 30px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 30px;
+  }
 
   @media screen and (min-width: $desktop) {
     margin-top: 50px;

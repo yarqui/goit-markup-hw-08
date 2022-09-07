@@ -6,7 +6,7 @@
 
 ✅add to footer\_\_wrap text-align: center up to desktop
 
-\*\*\*\* in container:
+✅ in container:
 =added @media screen and (min-width: $mobile) {
 width: 480px;
 }
@@ -20,14 +20,17 @@ width: 1200px;
 
 = removed width: 100%;
 
-\*\*\*\* in hero section:
+✅ in hero section:
 =added class container
 
-\*\*\*\* in footer\_\_wrap
+✅ in footer\_\_wrap
 =added class container
 
-\*\*\*\* in footer\_\_wrap
+✅ in footer\_\_wrap
 =removed
 padding-right: 15px;
 padding-left: 15px;
 margin: 0 auto;
+
+1. removed container class in hero wrap
+2.

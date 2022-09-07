@@ -770,10 +770,17 @@ body {
 }
 
 .hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 118px 0;
+  max-width: 1600px;
   background-color: var(--dark-grey-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero__wrap {
@@ -790,10 +797,16 @@ body {
 .hero__title {
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.61;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .benefits__list {
@@ -1034,8 +1047,13 @@ body {
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 40px;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    margin-top: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__list {
