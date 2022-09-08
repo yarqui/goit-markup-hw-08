@@ -7,6 +7,16 @@
 
 .header__wrap {
   @include centeredFlex($jc: null);
+
+  @media screen and (max-width: calc($tablet - 0.5px)) {
+    height: 60px;
+  }
+}
+
+.navigation {
+  @media screen and (max-width: calc($desktop - 0.5px)) {
+    display: none;
+  }
 }
 
 .header__nav {
@@ -53,9 +63,12 @@
 }
 
 .header-contacts {
-  @include centeredFlex($jc: null);
+  display: none;
 
-  padding-left: 318px;
+  // 👇 is for desktop & maybe for tablet
+  // @include centeredFlex($jc: null);
+
+  // padding-left: 318px;
 }
 
 .header-contacts__icon {

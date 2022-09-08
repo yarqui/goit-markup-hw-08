@@ -32,5 +32,5 @@ padding-right: 15px;
 padding-left: 15px;
 margin: 0 auto;
 
-1. removed container class from hero wrap
+✅ removed container class from hero wrap
 

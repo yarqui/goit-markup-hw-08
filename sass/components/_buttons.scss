@@ -12,6 +12,34 @@
   transition: color var(--main-transition), background var(--main-transition);
 }
 
+.btn-menu-open {
+  width: 40px;
+  height: 40px;
+
+  margin-left: auto;
+  padding: 0;
+
+  border: none;
+
+  background-color: transparent;
+}
+
+.btn-menu-close {
+  position: absolute;
+
+  top: 10px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  border: none;
+
+  background-color: transparent;
+}
+
 .btn-hero {
   margin-top: 30px;
   padding: 10px;
