@@ -1263,7 +1263,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .filter-list {
-    width: 326px;
+    max-width: 326px;
   }
 }
 @media screen and (min-width: 768px) {

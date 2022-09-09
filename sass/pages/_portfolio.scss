@@ -5,7 +5,7 @@
   row-gap: 15px;
 
   @media screen and (max-width: calc($tablet - 1px)) {
-    width: 326px;
+    max-width: 326px;
   }
 
   @media screen and (min-width: $tablet) {
