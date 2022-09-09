@@ -22,6 +22,10 @@
   border: none;
 
   background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .btn-menu-close {

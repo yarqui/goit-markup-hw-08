@@ -57,6 +57,8 @@
           >
         </div>
 
+        <!-- Mobile Menu -->
+
         <button class="btn-menu-open" type="button" data-menu-open>
           <svg width="40px" height="40px">
             <use href="./images/icons.svg#icon-burger-menu"></use>
@@ -73,7 +75,7 @@
 
           <nav class="mob-menu__navigation">
             <ul class="mob-menu__nav list">
-              <li class="mob-menu__nav-list">
+              <li class="mob-menu__nav-item">
                 <a
                   class="mob-menu__link mob-menu__link--current link"
                   href="./index.html"
@@ -81,12 +83,12 @@
                   Студія
                 </a>
               </li>
-              <li class="mob-menu__nav-list">
+              <li class="mob-menu__nav-item">
                 <a class="mob-menu__link link" href="./portfolio.html"
                   >Портфоліо</a
                 >
               </li>
-              <li class="mob-menu__nav-list">
+              <li class="mob-menu__nav-item">
                 <a class="mob-menu__link link" href="">Контакти</a>
               </li>
             </ul>
@@ -106,16 +108,16 @@
             </div>
 
             <ul class="mob-soc-list list">
-              <li>
+              <li class="mob-soc-list__item">
                 <a href="" class="mob-soc-list__link link">Instagram</a>
               </li>
-              <li>
+              <li class="mob-soc-list__item">
                 <a href="" class="mob-soc-list__link link">Twitter</a>
               </li>
-              <li>
+              <li class="mob-soc-list__item">
                 <a href="" class="mob-soc-list__link link">Facebook</a>
               </li>
-              <li>
+              <li class="mob-soc-list__item">
                 <a href="" class="mob-soc-list__link link">LinkedIn</a>
               </li>
             </ul>
@@ -236,12 +238,44 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/team-member-1.jpg"
-                alt="член команди Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-member-1.jpg    1x,
+                    ./images/team-member-1-x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-member-1-tab.jpg    1x,
+                    ./images/team-member-1-tab-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-member-1-mob.webp    1x,
+                    ./images/team-member-1-mob-x2.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-member-1-mob.jpg    1x,
+                    ./images/team-member-1-mob-x2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/team-member-1-mob.jpg"
+                  alt="член команди Ігор Дем'яненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__text-wrap">
                 <h3 class="team__member-title">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -279,8 +313,39 @@
             </li>
 
             <li class="team__item">
+              <picture>
+                                <source
+                  srcset="
+                    ./images/team-member-2.jpg    1x,
+                    ./images/team-member-2-x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-member-2-tab.jpg    1x,
+                    ./images/team-member-2-tab-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-member-2-mob.webp    1x,
+                    ./images/team-member-2-mob-x2.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-member-2-mob.jpg    1x,
+                    ./images/team-member-2-mob-x2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
               <img
-                src="./images/team-member-2.jpg"
+                src="./images/team-member-2-mob.jpg"
                 alt="член команди Ольга Рєпіна"
                 width="270"
                 height="260"
@@ -322,6 +387,37 @@
             </li>
 
             <li class="team__item">
+              <picture>
+                               <source
+                  srcset="
+                    ./images/team-member-3.jpg    1x,
+                    ./images/team-member-3-x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-member-3-tab.jpg    1x,
+                    ./images/team-member-3-tab-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-member-3-mob.webp    1x,
+                    ./images/team-member-3-mob-x2.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-member-3-mob.jpg    1x,
+                    ./images/team-member-3-mob-x2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
               <img
                 src="./images/team-member-3.jpg"
                 alt="член команди Микола Тарасов"
@@ -365,6 +461,9 @@
             </li>
 
             <li class="team__item">
+              <!-- <picture>
+                <source />
+              </picture> -->
               <img
                 src="./images/team-member-4.jpg"
                 alt="член команди Михайло Єрмаков"

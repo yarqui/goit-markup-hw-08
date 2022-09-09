@@ -28,7 +28,7 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
+  width: 90%;
   min-height: 581px;
   padding: 40px;
 
@@ -42,6 +42,14 @@
   opacity: 1;
   transition: width var(--main-transition), opacity var(--main-transition),
     visibility var(--main-transition);
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
 }
 
 .is-hidden .modal {
@@ -57,10 +65,14 @@
 }
 
 .form__text {
-  @include fontSet(700, 20px, 1.15);
+  @include fontSet(700, 20px, 1.5);
   text-align: center;
 
   color: var(--black-font-color);
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
 
 .form__label {
@@ -126,13 +138,20 @@
 
 .user-policy {
   position: relative;
-  padding-left: 35px;
-  width: 425px;
+  padding-left: 24px;
+  width: 100%;
   margin-top: 20px;
 
-  @include fontSet(null, 14px, 1.71);
+  @include fontSet(null, 12px, 1.17);
 
   color: var(--grey-font-color);
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 35px;
+    width: 425px;
+
+    @include fontSet(null, 14px, 1.71);
+  }
 }
 
 .user-policy__text {
@@ -149,7 +168,7 @@
 .user-policy__icon {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 0px;
   transform: translateY(-50%);
 
   display: inline-block;
@@ -162,6 +181,10 @@
 
   transition: border var(--main-transition),
     background-color var(--main-transition);
+
+  @media screen and (min-width: $desktop) {
+    left: 10px;
+  }
 
   .user-policy__checkbox:checked + & {
     border: 2px solid var(--accent-color);
